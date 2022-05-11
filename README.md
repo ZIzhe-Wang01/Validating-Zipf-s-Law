@@ -17,6 +17,8 @@ import collections
 import matplotlib.pyplot as plt
 
 ```
+(From the definition of Zipf's law, it should be a natural text without too much processing, so it is of little significance as a stop word list, so I did not deal with stop words in the preprocessing part.)
+
 Because the text contains a lot of preface, and we need to study the body part, we can remove the parts outside the body by defining a function called  _clean_gutenberg_text
 ```
 def _clean_gutenberg_text(text):
@@ -92,3 +94,4 @@ def showPlt(res):
     print(f_sorted)
     showPlt(f_sorted)
    ```
+    As shown in the figure, the verification is successful.
